@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root{
+    --color-secundario: rgb(255, 35, 0);
 }
 
 header {
@@ -13,7 +17,7 @@ header {
     background-color: black;
     width: 100%;
     padding: 2rem;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid var(--color-secundario);
     position: sticky;
     top: 0;
 }
@@ -32,7 +36,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    border-top: 1px solid yellow;
+    border-top: 1px solid var(--color-secundario);
 }
 
 .logo{
@@ -40,11 +44,24 @@ footer{
     flex-direction: row;
 }
 
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
 .logo h2{
-    font-family: "Freeman", sans-serif;
-    font-size: 4rem;
+    font-family: "Cabin Sketch", sans-serif;
     font-weight: 700;
-    font-style: normal;
+    font-size: 6.25rem;
+    font-style: normal
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9rem;
 }
 
 .navBar ul{
@@ -52,7 +69,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
+    gap: 2rem;
 }
 
 .navBar ul li{
@@ -62,9 +79,14 @@ footer{
 .navBar ul li a{
     text-decoration: none;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 2rem;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.navBar ul li a:hover{
+    color: var(--color-secundario);
 }
 
 .banner-main{
@@ -78,7 +100,7 @@ footer{
     justify-content: flex-end;
     padding-right: 18.75rem;
     align-items: center;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid var(--color-secundario);
 }
 
 
@@ -87,7 +109,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid var(--color-secundario);
     padding: 5rem;
 }
 
@@ -107,6 +129,7 @@ footer{
 }
 
 .ventajas{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -120,46 +143,59 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: red;
+    background-color: var(--color-secundario);
     width: 20rem;
     height: 20rem;
     margin: 2rem;
     border-radius: 1rem;
     padding: 2rem;
-    
 }
 
-.ventaja1 div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.ventaja1 img{
+.ventajas img{
     width: 6.25rem;
     height: 6.25rem;
 }
 
 .ventaja2{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color-secundario);
     width: 20rem;
     height: 20rem;
     margin: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 .ventaja3{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color-secundario);
     width: 20rem;
     height: 20rem;
     margin: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 .ventaja4{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color-secundario);
     width: 20rem;
     height: 20rem;
     margin: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 .product-container{
@@ -190,8 +226,8 @@ footer{
     font-size: 2rem;
     font-weight: bold;
     background-color: black;
-    border: 1px solid yellow;
-    color: red;
+    border: 1px solid var(--color-secundario);
+    color: var(--color-secundario);
     border-radius: 1.5rem 1.5rem;
     position: relative;
     right: 16.875rem;
@@ -199,7 +235,7 @@ footer{
 
 .btn-product a{
     text-decoration: none;
-    color: red;
+    color: var(--color-secundario);
 }
 
 .carbon-img img{
@@ -240,7 +276,7 @@ footer{
     height: 125rem;
     justify-content: center;
     align-content: center;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid var(--color-secundario);
     gap: 4rem;
     grid-template-columns: repeat(4,20%);
     grid-template-rows: repeat(3,25%);
@@ -255,7 +291,10 @@ footer{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px yellow;
+    box-shadow: 0px 0px 20px var(--color-secundario);
+}
+
+.galeria-home img:hover{
 }
 
 .item1{
