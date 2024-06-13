@@ -620,8 +620,22 @@ footer .redes h5{
     height: 100%;
 }
 
+/* ----------PAGE CARBON-------------- */
 
-/* -----------PAGE CONTACO---------------- */
+.carbon-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1, 1fr;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    }
+
+.carbon-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* -----------PAGE CONTACtO---------------- */
 .form-contacto{
     width: 20rem;
     height: 30rem;
