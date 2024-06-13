@@ -554,7 +554,7 @@ footer .redes h5{
     width: 100%;
     height: 0px;
     border: 1px solid var(--color-secundario);
-    margin-bottom: 2rem;
+    margin: 2rem; 
 }
 
 .empresa-descripcion{
@@ -565,11 +565,15 @@ footer .redes h5{
     text-align: justify;
 }
 
-.section-localizacion .linea-separacion{
+.localizacion-container{
+    margin: 2rem;
+}
+
+.localizacion-container .linea-separacion{
     width: 100%;
     height: 0px;
     border: 1px solid var(--color-secundario);
-    margin: 2rem;
+    margin-top: 3rem;
 }
 
 .info-localizacion{
@@ -584,10 +588,30 @@ footer .redes h5{
     text-align: justify;
 }
 
+.transporte-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.transporte-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.transporte-info p{
+    text-align: justify;
+}
+
 .transportes-img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1, 1fr;
+    margin-bottom: 1rem;
     gap: 1rem;
 }
 
@@ -703,8 +727,8 @@ footer .redes h5{
         font-family: "Open Sans", sans-serif;
     }
     .maps{
-        width: 350px; 
-        height: 200px;
+        width: 250px; 
+        height: 150px;
     }
 }
 
@@ -735,6 +759,11 @@ footer .redes h5{
     }
     footer .redes h5{
         padding-right: 5px;
+    }
+    .localizacion-container .linea-separacion{
+        width: 100%;
+        height: 0px;
+        margin: 1rem;
     }
 }
 
@@ -879,6 +908,11 @@ footer .redes h5{
     .maps{
         width: 200px; 
         height: 100px;
+    }
+    .localizacion-container .linea-separacion{
+        width: 80%;
+        height: 0px;
+        margin: 1rem;
     }
 }
 
