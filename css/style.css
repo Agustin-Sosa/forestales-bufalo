@@ -661,6 +661,28 @@ footer .redes h5{
 
 /* -----------PAGE CONTACtO---------------- */
 
+.form-contacto{
+    width: 20rem;
+    height: 30rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contacto label{
+    font-size: 2rem;
+}
+
+.form-contacto input{
+    padding-top: 0.8rem;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.form-contacto textarea{
+    margin: 1rem 0;
+}
+
 /* ---------------mediaqueris----------------------- */
 
 @media (max-width: 1440px){
