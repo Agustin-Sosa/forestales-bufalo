@@ -1,0 +1,1027 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-secundario: #dc2f02;
+}
+
+/* ------------INDEX------------ */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-secundario);
+    position: sticky;
+    top: 0;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-top: 1px solid var(--color-secundario);
+}
+
+footer h5{
+    font-size: 0.7rem;
+}
+
+footer a img{
+    width: 2rem;
+}
+
+footer .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer .redes h5{
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    padding-right: 1rem;
+    border-right: 1px solid white;
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo h2{
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    font-style: normal;
+    margin-left: 2rem;
+}
+
+.logo img{
+    width: 130px;
+    height: 70px;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.navBar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navBar ul li{
+    list-style: none;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.navBar ul li a:hover{
+    color: var(--color-secundario);
+}
+
+.banner-main{
+    width: 100%;
+    height: 25rem;
+    background-image: url("../assets/img/banner-main.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 30%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 18.75rem;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.titulo-banner h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 2rem;
+}
+
+.contenedor p{
+    margin-top: 3rem;
+}
+
+.info-intro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.info-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 3rem;
+    text-align: center;
+}
+
+.info-calidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 3rem;
+    border-radius: 2rem;
+    color: white;
+    gap: 2rem;
+}
+
+.info-calidad img{
+    width: 100%;
+    box-shadow: 0px 0px 6px white;
+}
+
+.info-calidad h2{
+    width: 20rem;
+    font-size: 1rem;
+    background-color: var(--color-secundario);
+    padding: 5px;
+    text-align: center;
+    border-radius: 7px;
+    color: black;
+    text-decoration: underline;
+}
+
+
+.contenedor h1{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contenedor p{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.info-intro .linea-separacion{
+    width: 1px;
+    height: 500px;
+    border-right: var(--color-secundario) 1px double;
+}
+
+.info-p .linea-separacion{
+    width: 80%;
+    height: 0px;
+    border: 1px solid var(--color-secundario);
+}
+
+.section-ventajas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.section-ventajas .title-product{
+    border-top: 1px solid var(--color-secundario);
+    padding-top: 3rem;
+    width: 80%;
+}
+
+.ventajas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ventaja1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-secundario);
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 0px 9px var(--color-secundario);
+}
+
+.ventajas img{
+    width: auto;
+    height: 10rem;
+}
+
+.ventaja1 h2{
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    text-shadow:  5px 10px 20px black;
+}
+
+.ventaja2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-secundario);
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 0px 9px var(--color-secundario);
+}
+
+.ventaja2 h2{
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    text-shadow:  5px 10px 20px black;
+}
+
+.ventaja3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-secundario);
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 0px 9px var(--color-secundario);
+}
+
+.ventaja3 h2{
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    text-shadow:  5px 10px 20px black;
+}
+
+.ventaja4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-secundario);
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 0px 9px var(--color-secundario);
+}
+
+.ventaja4 h2{
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    text-shadow:  5px 10px 20px black;
+}
+
+.cards-product{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.title-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.title-product h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.cards-product{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+    border: 7px solid black;
+    border-radius: 20px;
+    background-color: var(--color-secundario);
+    color: black;
+    box-shadow: 0px 0px 15px white;
+    padding: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.cards-product img{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cards-product p{
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cards-product h3{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+}
+
+.btn-card{
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn-card:hover{
+    background-color: white;
+    color: #000000;
+    opacity: 0.9;
+}
+
+.section-galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 2rem;
+}
+
+.galeria{
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4.1fr);
+    gap: 5px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+.galeria-img1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.galeria-img2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.galeria-img3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.galeria-img4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.galeria-img5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.galeria-img6{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/* ----------PAGE NOSOTROS-------------- */
+
+.titulo-bienvenida h1{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    background-color: var(--color-secundario);
+    padding: 2rem;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.titulo-bienvenida h1 span{
+    font-weight: 800;
+}
+
+.titulo-bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-leñera{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.img-leñera img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-leñera .item-1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.img-leñera .item-2{
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.bienvenida-info .linea-separacion{
+    margin-top: 2rem;
+    width: 100%;
+    height: 0px;
+    border: 1px solid var(--color-secundario);
+    margin: 2rem; 
+}
+
+.empresa-descripcion{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.localizacion-container{
+    margin: 2rem;
+}
+
+.localizacion-container .linea-separacion{
+    width: 100%;
+    height: 0px;
+    border: 1px solid var(--color-secundario);
+    margin-top: 3rem;
+}
+
+.info-localizacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-localizacion p{
+    padding-left: 1rem;
+    text-align: justify;
+}
+
+.transporte-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.transporte-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.transporte-info p{
+    text-align: justify;
+}
+
+.transportes-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1, 1fr;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.transportes-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -----------PAGE CONTACTO---------------- */
+.form-contacto{
+    width: 20rem;
+    height: 30rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contacto label{
+    font-size: 2rem;
+}
+
+.form-contacto input{
+    padding-top: 0.8rem;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.form-contacto textarea{
+    margin: 1rem 0;
+}
+
+/* ----------PAGE CARBON-------------- */
+
+.carbon-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1, 1fr;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    }
+
+.carbon-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* -----------PAGE CONTACtO---------------- */
+
+.form-contacto{
+    width: 20rem;
+    height: 30rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contacto label{
+    font-size: 2rem;
+}
+
+.form-contacto input{
+    padding-top: 0.8rem;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.form-contacto textarea{
+    margin: 1rem 0;
+}
+
+/* ---------------mediaqueris----------------------- */
+
+@media (max-width: 1440px){
+    .logo{
+        align-items: center;
+    }
+    .logo h2{
+        font-weight: 200;
+        font-size: 2rem;
+    }
+    .navBar ul li a{
+        font-size: 1rem;
+    }
+    .info-intro .linea-separacion{
+        height: 300px;
+    }
+    .maps{
+        width: 450px; 
+        height: 350px;
+    }
+}
+
+@media (max-width: 1024px){
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo img{
+        width: 80px;
+        height: 50px;
+    }
+    .logo h2{
+        font-weight: 200;
+        font-size: 2rem;
+    }
+    .navBar ul li a{
+        font-size: 1rem;
+    }
+    .contenedor h1{
+        font-size: 2rem;
+    }
+    .info-intro .linea-separacion{
+        height: 200px;
+    }
+    .info-calidad h2{
+        width: 10rem;
+        font-size: .625rem;
+    }
+    .title-product{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .title-product h2{
+        font-size: 1rem;
+    }
+    .cards-product{
+        width: 12rem;
+    }
+    
+    .cards-product img{
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .cards-product p{
+        text-align: center;
+        font-size: 0.6rem;
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    .cards-product h3{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        font-size: 1rem;
+    }
+    .btn-card{
+        width: 50%;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 200;
+        font-family: "Open Sans", sans-serif;
+    }
+    .maps{
+        width: 250px; 
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px){
+    .info-intro .linea-separacion{
+        display: none;
+    }
+    .banner-main{
+        height: 10rem;
+        background-position: 0 40%;
+    }
+    .titulo-banner h2{
+        font-size: 0.7rem;
+        text-align: start;
+    }
+    .info-calidad img{
+        width: 60%;
+        box-shadow: 0px 0px 6px white;
+    }
+    .contenedor h1{
+        font-size: 1rem;
+    }
+    .contenedor p{
+        font-size: 0.8rem;
+    }
+    footer .redes a img{
+        width: 1.8rem;
+    }
+    footer .redes h5{
+        padding-right: 5px;
+    }
+    .localizacion-container .linea-separacion{
+        width: 100%;
+        height: 0px;
+        margin: 1rem;
+    }
+    .titulo-bienvenida h1{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .bienvenida-info .empresa-descripcion{
+        font-size: 0.7rem;
+    }
+    .bienvenida-info .img-leñera{
+        width: 50%;
+        height: 50%;
+    }
+    .info-localizacion h2{
+        font-size: 0.9rem;
+    }
+    .info-localizacion p{
+        font-size: 0.7rem;
+    }
+    .transporte-info h2{
+        font-size: 0.9rem;
+    }
+    .transporte-info p{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 500px){
+    footer h5{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    footer .redes h5{
+        display: none;
+    }
+}
+
+@media (max-width: 425px){
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navBar ul{
+        gap: 0.5rem;
+    }
+    .logo img{
+        width: 60px;
+        height: 40px;
+    }
+    .logo h2{
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+    .navBar ul li a{
+        font-size: 1rem;
+    }
+    .contenedor h1{
+        font-size: 1rem;
+    }
+    .contenedor p{
+        margin-top: 0;
+        font-size: 0.7rem;
+    }
+    .info-intro .linea-separacion{
+        display: none;
+    }
+    .banner-main{
+        height: 6rem;
+        justify-content: left;
+        background-position: 0 50%;
+    }
+    .titulo-banner h2{
+        font-size: 0.5rem;
+        text-align: start;
+    }
+    .cards-product{
+        width: 10rem;
+        gap: 5px;
+    }
+    .cards-product img{
+        height: 7rem;
+    }
+    
+    .title-product h2{
+        font-size: 0.7rem;
+    }
+
+    .cards-product p{
+        text-align: center;
+        font-size: 0.5rem;
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    .cards-product h3{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+    .btn-card{
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 0.5rem;
+    }
+    .ventaja1{
+        gap: 10px;
+        width: 6rem;
+        height: 6rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .ventajas img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .ventaja1 h2{
+        font-size: 0.5rem;
+    }
+    .ventaja2{
+        gap: 10px;
+        width: 6rem;
+        height: 6rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .ventaja2 h2{
+        font-size: 0.5rem;
+    }
+    .ventaja3{
+        gap: 10px;
+        width: 6rem;
+        height: 6rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .ventaja3 h2{
+        font-size: 0.5rem;
+    }
+    .ventaja4{
+        gap: 10px;
+        width: 6rem;
+        height: 6rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .ventaja4 h2{
+        font-size: 0.5rem;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    footer h5{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    footer .redes a img{
+        width: 1rem;
+    }
+    .maps{
+        width: 200px; 
+        height: 100px;
+    }
+    .localizacion-container .linea-separacion{
+        width: 80%;
+        height: 0px;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 375px){
+    .info-intro .linea-separacion{
+        display: none;
+    }
+    .info-p{
+        margin-top: 0;
+        gap: 1rem;
+    }
+    .banner-main{
+        height: 6rem;
+        justify-content: left;
+        background-position: 0 50%;
+    }
+    .titulo-banner h2{
+        font-size: 0.5rem;
+        text-align: start;
+    }
+    .navBar ul{
+        gap: 5px;
+    }
+    .logo img{
+        width: 60px;
+        height: 40px;
+    }
+    .logo h2{
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+    .navBar ul li a{
+        font-size: 0.7rem;
+    }
+    .contenedor h1{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .contenedor p{
+        font-size: 0.5rem;
+        margin-top: 0;
+    }
+    .titulo-bienvenida h1{
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    .info-localizacion h2{
+        font-size: 0.5rem;
+    }
+}
