@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: white; }
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 1rem;
+  border-bottom: 1px solid #dc2f02;
+  position: sticky;
+  top: 0; }
+  header .logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    header .logo a {
+      text-decoration: none;
+      color: white; }
+      header .logo a h2 {
+        font-family: "Cabin Sketch", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+        font-style: normal;
+        margin-left: 2rem; }
+      header .logo a img {
+        width: 130px;
+        height: 70px; }
+  header .navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem; }
+    header .navBar ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem; }
+      header .navBar ul li {
+        list-style: none; }
+        header .navBar ul li a {
+          text-decoration: none;
+          color: white;
+          font-family: "Cabin Sketch", sans-serif;
+          font-weight: 300;
+          font-style: normal;
+          font-size: 1.5rem; }
+          header .navBar ul li a:hover {
+            color: #dc2f02; }
+
+.main-index .banner-main {
+  width: 100%;
+  height: 25rem;
+  background-image: url("../assets/img/banner-main.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 30%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 18.75rem;
+  align-items: center;
+  border-bottom: 1px solid black; }
+  .main-index .banner-main .titulo-banner h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem; }
+
+.main-index .contenedor {
+  width: 100%;
+  padding: 2rem; }
+  .main-index .contenedor .info-intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; }
+    .main-index .contenedor .info-intro h1 {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-size: 3rem;
+      text-align: center; }
+    .main-index .contenedor .info-intro .info-calidad {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      padding: 3rem;
+      border-radius: 2rem;
+      color: white;
+      gap: 2rem; }
+      .main-index .contenedor .info-intro .info-calidad img {
+        width: 100%;
+        box-shadow: 0px 0px 6px white; }
+      .main-index .contenedor .info-intro .info-calidad h2 {
+        width: 20rem;
+        font-size: 1rem;
+        background-color: #dc2f02;
+        padding: 5px;
+        text-align: center;
+        border-radius: 7px;
+        color: black;
+        text-decoration: underline; }
+    .main-index .contenedor .info-intro .linea-separacion {
+      width: 1px;
+      height: 500px;
+      border-right: #dc2f02 1px double; }
+  .main-index .contenedor .info-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 3rem;
+    text-align: center; }
+    .main-index .contenedor .info-p p {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-size: 1rem; }
+    .main-index .contenedor .info-p .linea-separacion {
+      width: 80%;
+      height: 0px;
+      border: 1px solid #dc2f02; }
+
+.main-index .section-cards .title-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem; }
+  .main-index .section-cards .title-product h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem; }
+
+.main-index .section-cards .cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem; }
+  .main-index .section-cards .cards .cards-product {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 7px solid black;
+    border-radius: 20px;
+    background-color: #dc2f02;
+    color: black;
+    box-shadow: 0px 0px 15px white;
+    padding: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0; }
+    .main-index .section-cards .cards .cards-product img {
+      width: 100%;
+      height: 50%;
+      border-bottom: 1px solid black;
+      border-top: none;
+      border-radius: 20px 20px 0px 0px; }
+    .main-index .section-cards .cards .cards-product h3 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 900; }
+    .main-index .section-cards .cards .cards-product p {
+      text-align: center;
+      font-size: 1rem;
+      font-family: "Open Sans", sans-serif; }
+    .main-index .section-cards .cards .cards-product .btn-card {
+      width: 50%;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #000000;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: "Open Sans", sans-serif; }
+      .main-index .section-cards .cards .cards-product .btn-card:hover {
+        background-color: white;
+        color: #000000;
+        opacity: 0.9; }
+
+.main-index .section-ventajas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  padding-bottom: 2rem; }
+  .main-index .section-ventajas .title-product h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem; }
+  .main-index .section-ventajas .ventajas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .main-index .section-ventajas .ventajas img {
+      width: auto;
+      height: 10rem; }
+    .main-index .section-ventajas .ventajas h2 {
+      text-align: center;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: bold;
+      color: black;
+      text-shadow: 5px 10px 20px black; }
+
+.main-index .section-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 2rem; }
+  .main-index .section-galeria .galeria {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4.1fr);
+    gap: 5px; }
+    .main-index .section-galeria .galeria img {
+      width: 100%;
+      height: 100%; }
+    .main-index .section-galeria .galeria .galeria-img1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .main-index .section-galeria .galeria .galeria-img2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+    .main-index .section-galeria .galeria .galeria-img3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .main-index .section-galeria .galeria .galeria-img4 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+    .main-index .section-galeria .galeria .galeria-img5 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4; }
+    .main-index .section-galeria .galeria .galeria-img6 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-top: 1px solid #dc2f02; }
+  footer .info h5 {
+    font-size: 0.7rem; }
+  footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; }
+    footer .redes h5 {
+      margin-right: 0.5rem;
+      font-size: 0.8rem;
+      padding-right: 1rem;
+      border-right: 1px solid white; }
+    footer .redes a img {
+      width: 2rem; }
+
+.ventaja-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #dc2f02;
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0px 0px 9px #dc2f02; }

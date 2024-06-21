@@ -1,0 +1,60 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 1rem;
+    border-bottom: 1px solid $color-secundario;
+    position: sticky;
+    top: 0;
+    .logo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        a{
+            text-decoration: none;
+            color: white;
+            h2{
+                font-family: "Cabin Sketch", sans-serif;
+                font-weight: 600;
+                font-size: 3rem;
+                font-style: normal;
+                margin-left: 2rem;
+            }
+            img{
+                width: 130px;
+                height: 70px;
+            }
+        }
+    }
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: "Cabin Sketch", sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 1.5rem;
+                    &:hover{
+                        color: $color-secundario;
+                    }
+                }
+            }
+        }
+    }
+}
