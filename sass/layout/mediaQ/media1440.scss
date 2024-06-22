@@ -1,0 +1,38 @@
+@media (max-width: 1440px){
+    header{
+        .logo{
+            align-items: center;
+            a{
+                h2{
+                    font-weight: 200;
+                    font-size: 2rem;
+                }
+            }
+        }
+        .navBar{
+            ul{
+                li{
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .contenedor{
+        .info-intro{
+            .linea-separacion{
+                height: 300px;
+            }
+        }
+    }
+
+    .localizacion-container{
+        .maps{
+            width: 450px; 
+            height: 350px;
+        }
+    }
+
+}

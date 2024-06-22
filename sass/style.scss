@@ -17,6 +17,18 @@
 @import "./layout/header";
 @import "./layout/main-index";
 @import "./layout/footer";
+@import "./layout/main-contacto";
+@import "./layout/main-nosotros";
+@import "./layout/main-carbon";
+
+// --MediaQ--
+
+@import "./layout/mediaQ/media1440.scss";
+@import "./layout/mediaQ/media1024.scss";
+@import "./layout/mediaQ/media768.scss";
+@import "./layout/mediaQ/media500.scss";
+@import "./layout/mediaQ/media425.scss";
+@import "./layout/mediaQ/media375.scss";
 
 
 

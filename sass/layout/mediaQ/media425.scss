@@ -1,0 +1,150 @@
+@media (max-width: 425px){
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+        .logo{
+            a{
+                h2{
+                    font-weight: 100;
+                    font-size: 1.5rem;
+                }
+                img{
+                    width: 60px;
+                    height: 40px;
+                }
+            }
+        }
+        .navBar{
+            ul{
+                gap: 0.5rem;
+                li{
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-index{
+        .banner-main{
+            height: 6rem;
+            justify-content: left;
+            background-position: 0 50%;
+            .titulo-banner{
+                h2{
+                    font-size: 0.5rem;
+                    text-align: start;
+                }
+            }
+        }
+    
+        .contenedor{
+            .info-intro{
+                .info-calidad{
+                    h2{
+                        width: 50%;
+                        font-size: 0.5rem;
+                    }
+                }
+                .linea-separacion{
+                    display: none;
+                }
+            }
+            .info-p{
+                p{
+                    margin-top: 0;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    
+        .section-cards{
+            .title-product{
+                h2{
+                    font-size: 0.7rem;
+                }
+            }
+            .cards{
+                .cards-product{
+                    width: 10rem;
+                    gap: 5px;
+                    img{
+                        height: 7rem;
+                    }
+                    h3{
+                        font-family: "Open Sans", sans-serif;
+                        font-weight: 700;
+                        font-size: 0.8rem;
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 0.5rem;
+                        font-family: "Open Sans", sans-serif;
+                    }
+                    .btn-card{
+                        padding: 5px;
+                        border-radius: 10px;
+                        font-size: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .section-ventajas{
+            .title-product{
+                h2{
+                    font-size: 0.7rem;
+                }
+            }
+            .ventajas{
+                .ventaja-card{
+                    gap: 10px;
+                    width: 6rem;
+                    height: 6rem;
+                    margin: 1rem;
+                    padding: 1rem;
+                    img{
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                    h2{
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+
+            footer{
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem;
+                .info{
+                    h5{
+                        font-size: 0.5rem;
+                        text-align: center;
+                    }
+                }
+                .redes{
+                    a{
+                        img{
+                            width: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .localizacion-container{
+                .maps{
+                    width: 200px; 
+                    height: 100px;
+                }
+                .linea-separacion{
+                    width: 80%;
+                    height: 0px;
+                    margin: 1rem;
+                }
+            }
+        }
+    

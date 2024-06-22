@@ -1,0 +1,77 @@
+@media (max-width: 375px){
+    header{
+        .logo{
+            a{
+                h2{
+                    font-weight: 100;
+                    font-size: 1.5rem;
+                }
+            }
+            a{
+                img{
+                    width: 60px;
+                    height: 40px;
+                }
+            }
+        }
+        .navBar{
+            ul{
+                gap: 5px;
+                li{
+                    a{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor{
+        .info-intro{
+            .linea-separacion{
+            display: none;
+            }
+            h1{
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+        .info-p{
+            margin-top: 0;
+            gap: 1rem;
+            p{
+                font-size: 0.5rem;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .banner-main{
+        height: 6rem;
+        justify-content: left;
+        background-position: 0 50%;
+        .titulo-banner{
+            h2{
+                font-size: 0.5rem;
+                text-align: start;
+            }
+        }
+    }
+
+
+    .titulo-bienvenida{
+        h1{
+            font-size: 1rem;
+            padding: 0.3rem;
+        }
+    }
+
+
+    .localizacion-container{
+        .info-localizacion{
+            h2{
+                font-size: 0.5rem;
+            }
+        }
+    }
+}

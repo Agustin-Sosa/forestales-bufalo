@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -296,6 +297,347 @@ footer {
       border-right: 1px solid white; }
     footer .redes a img {
       width: 2rem; }
+
+.container .form-contacto {
+  width: 20rem;
+  height: 30rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; }
+  .container .form-contacto label {
+    font-size: 2rem; }
+  .container .form-contacto input {
+    padding-top: 0.8rem;
+    margin: 1rem 0;
+    justify-content: center; }
+  .container .form-contacto textarea {
+    margin: 1rem 0; }
+
+.container .titulo-bienvenida {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container .titulo-bienvenida h1 {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    background-color: #dc2f02;
+    padding: 2rem;
+    color: #000000;
+    border-radius: 5px; }
+    .container .titulo-bienvenida h1 span {
+      font-weight: 800; }
+
+.container .bienvenida-info .img-leñera {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
+  .container .bienvenida-info .img-leñera img {
+    width: 100%;
+    height: 100%; }
+  .container .bienvenida-info .img-leñera .item-1 {
+    grid-column: 1/3;
+    grid-row: 1/3; }
+  .container .bienvenida-info .img-leñera .item-2 {
+    grid-column: 2/4;
+    grid-row: 2/4; }
+
+.container .bienvenida-info .empresa-descripcion {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: justify; }
+
+.container .bienvenida-info .linea-separacion {
+  margin-top: 2rem;
+  width: 100%;
+  height: 0px;
+  border: 1px solid #dc2f02;
+  margin: 2rem; }
+
+.container .localizacion-container {
+  margin: 2rem; }
+  .container .localizacion-container .info-localizacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container .localizacion-container .info-localizacion p {
+      text-align: justify; }
+    .container .localizacion-container .info-localizacion h2 {
+      font-size: 1.5rem; }
+  .container .localizacion-container .linea-separacion {
+    width: 100%;
+    height: 0px;
+    border: 1px solid #dc2f02;
+    margin-top: 3rem; }
+
+.container .transporte-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem; }
+  .container .transporte-container .transporte-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container .transporte-container .transporte-info h2 {
+      font-size: 1.5rem; }
+    .container .transporte-container .transporte-info p {
+      text-align: justify; }
+  .container .transporte-container .transportes-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 1fr;
+    margin-bottom: 1rem;
+    gap: 1rem; }
+    .container .transporte-container .transportes-img img {
+      width: 100%;
+      height: 100%; }
+    .container .transporte-container .transportes-img .img-1 {
+      grid-column: 1/2;
+      grid-row: 1; }
+    .container .transporte-container .transportes-img .img-2 {
+      grid-column: 2/3;
+      grid-row: 1; }
+
+.carbon-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1, 1fr;
+  margin-bottom: 1rem;
+  gap: 1rem; }
+  .carbon-img img {
+    width: 100%;
+    height: 100%; }
+
+@media (max-width: 1440px) {
+  header .logo {
+    align-items: center; }
+    header .logo a h2 {
+      font-weight: 200;
+      font-size: 2rem; }
+  header .navBar ul li a {
+    font-size: 1rem; }
+  .contenedor .info-intro .linea-separacion {
+    height: 300px; }
+  .localizacion-container .maps {
+    width: 450px;
+    height: 350px; } }
+
+@media (max-width: 1024px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center; }
+    header .logo a h2 {
+      font-weight: 200;
+      font-size: 2rem; }
+    header .logo a img {
+      width: 80px;
+      height: 50px; }
+    header .navBar ul li a {
+      font-size: 1rem; }
+  .contenedor .info-intro h1 {
+    font-size: 2rem; }
+  .contenedor .info-intro .info-calidad h2 {
+    width: 10rem;
+    font-size: .625rem; }
+  .contenedor .info-intro .linea-separacion {
+    height: 200px; }
+  .section-cards .title-product {
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
+    .section-cards .title-product h2 {
+      font-size: 1rem; }
+  .section-cards .cards .cards-product {
+    width: 12rem; }
+    .section-cards .cards .cards-product img {
+      border-radius: 10px 10px 0px 0px; }
+    .section-cards .cards .cards-product h3 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 800;
+      font-size: 1rem; }
+    .section-cards .cards .cards-product p {
+      text-align: center;
+      font-size: 0.6rem;
+      font-family: "Open Sans", sans-serif; }
+    .section-cards .cards .cards-product .btn-card {
+      width: 50%;
+      padding: 5px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 200;
+      font-family: "Open Sans", sans-serif; }
+  .localizacion-container .maps {
+    width: 250px;
+    height: 150px; } }
+
+@media (max-width: 768px) {
+  .main-index .banner-main {
+    height: 10rem;
+    background-position: 0 40%; }
+    .main-index .banner-main .titulo-banner h2 {
+      font-size: 0.7rem;
+      text-align: start; }
+  .main-index .contenedor .info-intro h1 {
+    font-size: 1rem; }
+  .main-index .contenedor .info-intro .info-calidad img {
+    width: 60%;
+    box-shadow: 0px 0px 6px white; }
+  .main-index .contenedor .info-intro .linea-separacion {
+    display: none; }
+  .main-index .contenedor .info-p p {
+    font-size: 0.8rem; }
+  .container .titulo-bienvenida h1 {
+    font-size: 1rem;
+    padding: 1rem; }
+  .container .bienvenida-info .empresa-descripcion p {
+    font-size: 0.7rem; }
+  .container .bienvenida-info .img-leñera img {
+    width: 50%;
+    height: 50%; }
+  .localizacion-container .info-localizacion h2 {
+    font-size: 0.9rem; }
+  .localizacion-container .info-localizacion p {
+    font-size: 0.7rem; }
+  .localizacion-container .linea-separacion {
+    width: 100%;
+    height: 0px;
+    margin: 1rem; }
+  .transporte-container .transporte-info h2 {
+    font-size: 0.9rem; }
+  .transporte-container .transporte-info p {
+    font-size: 0.7rem; }
+  footer .redes h5 {
+    padding-right: 5px; }
+  footer .redes a img {
+    width: 1.8rem; } }
+
+@media (max-width: 500px) {
+  footer .info h5 {
+    font-size: 0.5rem;
+    text-align: center; }
+  footer .redes h5 {
+    display: none; } }
+
+@media (max-width: 425px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center; }
+    header .logo a h2 {
+      font-weight: 100;
+      font-size: 1.5rem; }
+    header .logo a img {
+      width: 60px;
+      height: 40px; }
+    header .navBar ul {
+      gap: 0.5rem; }
+      header .navBar ul li a {
+        font-size: 1rem; }
+  .main-index .banner-main {
+    height: 6rem;
+    justify-content: left;
+    background-position: 0 50%; }
+    .main-index .banner-main .titulo-banner h2 {
+      font-size: 0.5rem;
+      text-align: start; }
+  .main-index .contenedor .info-intro .info-calidad h2 {
+    width: 50%;
+    font-size: 0.5rem; }
+  .main-index .contenedor .info-intro .linea-separacion {
+    display: none; }
+  .main-index .contenedor .info-p p {
+    margin-top: 0;
+    font-size: 0.7rem; }
+  .main-index .section-cards .title-product h2 {
+    font-size: 0.7rem; }
+  .main-index .section-cards .cards .cards-product {
+    width: 10rem;
+    gap: 5px; }
+    .main-index .section-cards .cards .cards-product img {
+      height: 7rem; }
+    .main-index .section-cards .cards .cards-product h3 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem; }
+    .main-index .section-cards .cards .cards-product p {
+      text-align: center;
+      font-size: 0.5rem;
+      font-family: "Open Sans", sans-serif; }
+    .main-index .section-cards .cards .cards-product .btn-card {
+      padding: 5px;
+      border-radius: 10px;
+      font-size: 0.5rem; }
+  .section-ventajas .title-product h2 {
+    font-size: 0.7rem; }
+  .section-ventajas .ventajas .ventaja-card {
+    gap: 10px;
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+    padding: 1rem; }
+    .section-ventajas .ventajas .ventaja-card img {
+      width: 3rem;
+      height: 3rem; }
+    .section-ventajas .ventajas .ventaja-card h2 {
+      font-size: 0.5rem; }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem; }
+    footer .info h5 {
+      font-size: 0.5rem;
+      text-align: center; }
+    footer .redes a img {
+      width: 1rem; }
+  .localizacion-container .maps {
+    width: 200px;
+    height: 100px; }
+  .localizacion-container .linea-separacion {
+    width: 80%;
+    height: 0px;
+    margin: 1rem; } }
+
+@media (max-width: 375px) {
+  header .logo a h2 {
+    font-weight: 100;
+    font-size: 1.5rem; }
+  header .logo a img {
+    width: 60px;
+    height: 40px; }
+  header .navBar ul {
+    gap: 5px; }
+    header .navBar ul li a {
+      font-size: 0.7rem; }
+  .contenedor .info-intro .linea-separacion {
+    display: none; }
+  .contenedor .info-intro h1 {
+    font-size: 1rem;
+    text-align: center; }
+  .contenedor .info-p {
+    margin-top: 0;
+    gap: 1rem; }
+    .contenedor .info-p p {
+      font-size: 0.5rem;
+      margin-top: 0; }
+  .banner-main {
+    height: 6rem;
+    justify-content: left;
+    background-position: 0 50%; }
+    .banner-main .titulo-banner h2 {
+      font-size: 0.5rem;
+      text-align: start; }
+  .titulo-bienvenida h1 {
+    font-size: 1rem;
+    padding: 0.3rem; }
+  .localizacion-container .info-localizacion h2 {
+    font-size: 0.5rem; } }
 
 .ventaja-card {
   display: flex;
