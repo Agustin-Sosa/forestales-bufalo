@@ -2,6 +2,7 @@
 // -----------UTILITIES---------- 
 
 @import "./utilities/variables";
+@import "./components/linea-separacion";
 
 
 
@@ -22,6 +23,12 @@
 @import "./layout/main-carbon";
 @import "./layout/main-leña";
 
+
+// -----------COMPONENTES--------
+
+@import "./components/ventajas";
+
+
 // --MediaQ--
 
 @import "./layout/mediaQ/media1440.scss";
@@ -30,9 +37,3 @@
 @import "./layout/mediaQ/media500.scss";
 @import "./layout/mediaQ/media425.scss";
 @import "./layout/mediaQ/media375.scss";
-
-
-
-// -----------COMPONENTES--------
-
-@import "./components/ventajas";
