@@ -125,7 +125,9 @@ header {
     .main-index .contenedor .info-intro .linea-separacion {
       width: 1px;
       height: 500px;
-      border-right: #dc2f02 1px double; }
+      border-left: none;
+      border-bottom: none;
+      border-top: none; }
   .main-index .contenedor .info-p {
     display: flex;
     flex-direction: column;

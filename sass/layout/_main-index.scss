@@ -63,7 +63,9 @@
             .linea-separacion{
                 width: 1px;
                 height: 500px;
-                border-right: $color-secundario 1px double;
+                border-left: none;
+                border-bottom: none;
+                border-top: none;
             }
         }
         .info-p{
