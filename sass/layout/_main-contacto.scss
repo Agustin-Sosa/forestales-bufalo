@@ -1,22 +1,57 @@
-.container{
+.section-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .intro{
+        h1{
+            font-family: $font-principal;
+            font-size: 2rem;
+            text-align: center;
+        }
+        p{
+            font-family: $font-texto;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 1rem;
+            text-align: justify;
+        }
     }
     .form-contacto{
-        width: 20rem;
-        height: 30rem;
+        width: 50%;
         padding: 2rem;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        border: 1px solid $color-secundario;
+        border-radius: 10px;
         label{
-            font-size: 2rem;
+            font-size: 1rem;
+            font-family: $font-texto;
+            text-align: center;
         }
         input{
+            width: 100%;
             padding-top: 0.8rem;
             margin: 1rem 0;
             justify-content: center;
         }
         textarea{
             margin: 1rem 0;
+        }
+    }
+    div{
+        width: 50%;
+        margin: 1.5rem;
+        input{
+            width: 100%;
+            padding: 0.5rem;
+                    border-radius: 10px;
+                    font-size: 0.8rem;
+                    &:hover{
+                        color: white;
+                        background-color: black;
+                    }
         }
     }
 }
