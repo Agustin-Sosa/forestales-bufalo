@@ -73,67 +73,53 @@ header {
 
 .main-index .banner-main {
   width: 100%;
-  height: 25rem;
-  background-image: url("../assets/img/banner-main.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 0 30%;
+  height: 5rem;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 18.75rem;
-  align-items: center;
-  border-bottom: 1px solid black; }
-  .main-index .banner-main .titulo-banner h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1rem; }
-
-.main-index .contenedor {
-  width: 100%;
-  padding: 2rem; }
-  .main-index .contenedor .info-intro {
+  justify-content: start;
+  align-items: center; }
+  .main-index .banner-main .info-banner {
+    margin-top: 20rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%; }
-    .main-index .contenedor .info-intro h1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 2rem;
+    color: white;
+    margin-left: 4rem; }
+    .main-index .banner-main .info-banner div button {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #000000;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: "Open Sans", sans-serif; }
+      .main-index .banner-main .info-banner div button a {
+        text-decoration: none;
+        color: white; }
+    .main-index .banner-main .info-banner div h1 {
       font-family: "Cabin Sketch", sans-serif;
       font-style: normal;
       font-size: 3rem;
       text-align: center; }
-    .main-index .contenedor .info-intro .info-calidad {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid black;
-      padding: 3rem;
-      border-radius: 2rem;
-      color: white;
-      gap: 2rem; }
-      .main-index .contenedor .info-intro .info-calidad img {
-        width: 100%;
-        box-shadow: 0px 0px 6px white; }
-      .main-index .contenedor .info-intro .info-calidad h2 {
-        width: 20rem;
-        font-family: "Cabin Sketch", sans-serif;
-        font-size: 1rem;
-        background-color: #dc2f02;
-        padding: 5px;
-        text-align: center;
-        border-radius: 7px;
-        color: black;
-        text-decoration: underline; }
-    .main-index .contenedor .info-intro .linea-separacion {
-      width: 1px;
-      height: 500px;
-      border-left: none;
-      border-bottom: none;
-      border-top: none; }
+  .main-index .banner-main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute; }
+
+.main-index .contenedor {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 30rem; }
+  .main-index .contenedor h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: "Cabin Sketch", sans-serif; }
   .main-index .contenedor .info-p {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
@@ -142,11 +128,30 @@ header {
     .main-index .contenedor .info-p p {
       font-family: "Open Sans", sans-serif;
       font-style: normal;
-      font-size: 1rem; }
-    .main-index .contenedor .info-p .linea-separacion {
-      width: 80%;
-      height: 0px;
-      border: 1px solid #dc2f02; }
+      font-size: 1rem;
+      text-align: justify; }
+    .main-index .contenedor .info-p div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; }
+      .main-index .contenedor .info-p div img {
+        width: 70%;
+        box-shadow: 0px 0px 6px white; }
+      .main-index .contenedor .info-p div h2 {
+        width: 70%;
+        font-family: "Cabin Sketch", sans-serif;
+        font-size: 1rem;
+        background-color: #dc2f02;
+        padding: 5px;
+        text-align: center;
+        border-radius: 7px;
+        color: black; }
+  .main-index .contenedor .linea-separacion {
+    width: 90%;
+    height: 0px;
+    border: 1px solid #dc2f02; }
 
 .main-index .section-cards .title-product {
   display: flex;
