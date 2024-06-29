@@ -660,7 +660,21 @@ footer {
     height: 300px; }
   .localizacion-container .maps {
     width: 450px;
-    height: 350px; } }
+    height: 350px; }
+  .main-index .banner-main .info-banner {
+    margin-top: 10rem; }
+    .main-index .banner-main .info-banner div h1 {
+      font-size: 2rem; }
+    .main-index .banner-main .info-banner div button {
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 0.5rem; }
+  .main-index .contenedor {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 15rem; }
+    .main-index .contenedor .info-p {
+      gap: 2rem; } }
 
 @media (max-width: 1024px) {
   header {
@@ -710,12 +724,14 @@ footer {
     height: 150px; } }
 
 @media (max-width: 768px) {
-  .main-index .banner-main {
-    height: 10rem;
-    background-position: 0 40%; }
-    .main-index .banner-main .titulo-banner h2 {
-      font-size: 0.7rem;
-      text-align: start; }
+  .main-index .banner-main .info-banner {
+    margin-top: 10rem;
+    margin-left: 4rem; }
+    .main-index .banner-main .info-banner div button {
+      padding: 10px;
+      border-radius: 5px; }
+    .main-index .banner-main .info-banner div h1 {
+      font-size: 2rem; }
   .main-index .contenedor .info-intro h1 {
     font-size: 1rem; }
   .main-index .contenedor .info-intro .info-calidad img {
@@ -771,21 +787,27 @@ footer {
       gap: 0.5rem; }
       header .navBar ul li a {
         font-size: 1rem; }
-  .main-index .banner-main {
-    height: 6rem;
-    justify-content: left;
-    background-position: 0 50%; }
-    .main-index .banner-main .titulo-banner h2 {
-      font-size: 0.5rem;
-      text-align: start; }
-  .main-index .contenedor .info-intro .info-calidad h2 {
-    width: 50%;
-    font-size: 0.5rem; }
-  .main-index .contenedor .info-intro .linea-separacion {
-    display: none; }
-  .main-index .contenedor .info-p p {
-    margin-top: 0;
-    font-size: 0.7rem; }
+  .main-index .banner-main .info-banner {
+    margin-bottom: 5rem; }
+    .main-index .banner-main .info-banner div h1 {
+      font-size: 1.5rem;
+      text-wrap: wrap; }
+    .main-index .banner-main .info-banner div button {
+      padding: 4px;
+      font-size: 0.4rem; }
+  .main-index .banner-main video {
+    height: 50%; }
+  .main-index .contenedor {
+    margin-top: 5rem; }
+    .main-index .contenedor h2 {
+      font-size: 1rem; }
+    .main-index .contenedor .info-p {
+      gap: 1rem; }
+      .main-index .contenedor .info-p p {
+        font-size: 0.5rem;
+        margin-bottom: 6rem; }
+      .main-index .contenedor .info-p div h2 {
+        font-size: 0.5rem; }
   .main-index .section-cards .title-product h2 {
     font-size: 0.7rem; }
   .main-index .section-cards .cards .cards-product {

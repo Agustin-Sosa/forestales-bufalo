@@ -2,13 +2,20 @@
 
     .main-index{
         .banner-main{
-            height: 10rem;
-            background-position: 0 40%;
-            .titulo-banner{
-                h2{
-                    font-size: 0.7rem;
-                    text-align: start;
+            .info-banner{
+                margin-top: 10rem;
+                margin-left: 4rem;
+                div{
+                    button{
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
                 }
+                div{
+                    h1{
+                        font-size: 2rem;
+                    }
+                }    
             }
         }
 

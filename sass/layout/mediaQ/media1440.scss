@@ -35,4 +35,37 @@
         }
     }
 
+
+    .main-index{
+        .banner-main{
+            .info-banner{
+                margin-top: 10rem;
+                div{
+                    h1{
+                        font-size: 2rem;
+                    }
+                }
+                div{
+                    button{
+                        padding: 5px;
+                        border-radius: 5px;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .contenedor{
+            width: 100%;
+            padding: 2rem;
+            margin-top: 15rem;
+            .info-p{
+                gap: 2rem;
+            }
+        }
+    }
 }
+
+
+    
+
