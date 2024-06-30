@@ -29,7 +29,8 @@ header {
   padding: 1rem;
   border-bottom: 1px solid #dc2f02;
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
   header .logo {
     display: flex;
     flex-direction: row;
@@ -97,6 +98,9 @@ header {
       .main-index .banner-main .info-banner div button a {
         text-decoration: none;
         color: white; }
+      .main-index .banner-main .info-banner div button img {
+        margin-left: 4px;
+        width: 20px; }
     .main-index .banner-main .info-banner div h1 {
       font-family: "Cabin Sketch", sans-serif;
       font-style: normal;
@@ -138,7 +142,13 @@ header {
       gap: 1rem; }
       .main-index .contenedor .info-p div img {
         width: 70%;
+        filter: grayscale(1);
         box-shadow: 0px 0px 6px white; }
+        .main-index .contenedor .info-p div img:hover {
+          filter: grayscale(0);
+          transition-property: filter(grayscale);
+          transition-duration: 800ms;
+          box-shadow: 0px 0px 6px #dc2f02; }
       .main-index .contenedor .info-p div h2 {
         width: 70%;
         font-family: "Cabin Sketch", sans-serif;
@@ -182,23 +192,31 @@ header {
     gap: 5px;
     border: 7px solid black;
     border-radius: 20px;
-    background-color: #dc2f02;
-    color: black;
+    color: white;
     box-shadow: 0px 0px 15px white;
     padding: 1rem;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 0; }
+    padding-top: 0;
+    overflow: hidden; }
     .main-index .section-cards .cards .cards-product img {
       width: 100%;
       height: 50%;
       border-bottom: 1px solid black;
       border-top: none;
-      border-radius: 20px 20px 0px 0px; }
+      border-radius: 20px 20px 0px 0px;
+      object-fit: cover; }
+      .main-index .section-cards .cards .cards-product img:hover {
+        transform: scale(1.1);
+        transition-property: scale();
+        transition-duration: 100ms;
+        cursor: zoom-in; }
     .main-index .section-cards .cards .cards-product h3 {
       font-family: "Open Sans", sans-serif;
       font-weight: 700;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      margin-top: 10px;
+      color: #dc2f02; }
     .main-index .section-cards .cards .cards-product p {
       text-align: center;
       font-size: 1rem;
@@ -207,6 +225,7 @@ header {
     .main-index .section-cards .cards .cards-product .btn-card {
       width: 50%;
       padding: 10px;
+      border: 1px solid white;
       border-radius: 20px;
       background-color: #000000;
       color: white;
@@ -258,40 +277,66 @@ header {
     width: 50%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4.1fr);
-    gap: 5px; }
+    gap: 10px; }
     .main-index .section-galeria .galeria img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 8px white; }
     .main-index .section-galeria .galeria .galeria-img1 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 1;
       grid-row-end: 2; }
+      .main-index .section-galeria .galeria .galeria-img1 img:hover {
+        transform: scale(1.5);
+        transition-property: scale();
+        transition-duration: 800ms; }
     .main-index .section-galeria .galeria .galeria-img2 {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 3; }
+      .main-index .section-galeria .galeria .galeria-img2 img:hover {
+        transform: scale(1.4);
+        transition-property: scale();
+        transition-duration: 800ms; }
     .main-index .section-galeria .galeria .galeria-img3 {
       grid-column-start: 3;
       grid-column-end: 4;
       grid-row-start: 1;
       grid-row-end: 2; }
+      .main-index .section-galeria .galeria .galeria-img3 img:hover {
+        transform: scale(1.5);
+        transition-property: scale();
+        transition-duration: 800ms; }
     .main-index .section-galeria .galeria .galeria-img4 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 2;
       grid-row-end: 4; }
+      .main-index .section-galeria .galeria .galeria-img4 img:hover {
+        transform: scale(1.3);
+        transition-property: scale();
+        transition-duration: 800ms; }
     .main-index .section-galeria .galeria .galeria-img5 {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 3;
       grid-row-end: 4; }
+      .main-index .section-galeria .galeria .galeria-img5 img:hover {
+        transform: scale(1.5);
+        transition-property: scale();
+        transition-duration: 800ms; }
     .main-index .section-galeria .galeria .galeria-img6 {
       grid-column-start: 3;
       grid-column-end: 4;
       grid-row-start: 2;
       grid-row-end: 4; }
+      .main-index .section-galeria .galeria .galeria-img6 img:hover {
+        transform: scale(1.3);
+        transition-property: scale();
+        transition-duration: 800ms; }
 
 footer {
   width: 100%;
