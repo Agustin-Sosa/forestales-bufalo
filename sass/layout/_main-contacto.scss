@@ -15,6 +15,10 @@
             font-weight: 200;
             font-size: 1rem;
             text-align: justify;
+            &::first-letter{
+                font-size: 2rem;
+                font-weight: 600;
+            }
         }
     }
     .form-contacto{
@@ -34,10 +38,11 @@
             width: 100%;
             padding-top: 0.8rem;
             margin: 1rem 0;
-            justify-content: center;
+            border-radius: 7px;
         }
         textarea{
             margin: 1rem 0;
+            border-radius: 7px;
         }
     }
     div{
@@ -48,9 +53,14 @@
             padding: 0.5rem;
                     border-radius: 10px;
                     font-size: 0.8rem;
+                    background-color: #000000;
+                    color: white;
+                    font-family: $font-texto;
+                    box-shadow: 0px 0px 6px white;
+                    font-weight: 600;
                     &:hover{
-                        color: white;
-                        background-color: black;
+                        background-color: white;
+                        color: #000000;
                     }
         }
     }

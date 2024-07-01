@@ -86,7 +86,8 @@ header {
     align-items: start;
     border-radius: 2rem;
     color: white;
-    margin-left: 4rem; }
+    margin-left: 4rem;
+    gap: 15px; }
     .main-index .banner-main .info-banner div a {
       padding: 10px;
       border-radius: 5px;
@@ -96,7 +97,8 @@ header {
       font-weight: 500;
       font-family: "Open Sans", sans-serif;
       font-size: 1rem;
-      text-decoration: none; }
+      text-decoration: none;
+      box-shadow: 0px 0px 6px white; }
       .main-index .banner-main .info-banner div a:hover {
         background-color: white;
         color: #000000; }
@@ -115,7 +117,7 @@ header {
 .main-index .contenedor {
   width: 100%;
   padding: 2rem;
-  margin-top: 30rem; }
+  margin-top: 35rem; }
   .main-index .contenedor h2 {
     text-align: center;
     margin-bottom: 4rem;
@@ -123,9 +125,9 @@ header {
   .main-index .contenedor .info-p {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
     gap: 3rem;
     text-align: center; }
     .main-index .contenedor .info-p p {
@@ -133,6 +135,9 @@ header {
       font-style: normal;
       font-size: 1rem;
       text-align: justify; }
+      .main-index .contenedor .info-p p::first-letter {
+        font-size: 2rem;
+        font-weight: 600; }
     .main-index .contenedor .info-p div {
       display: flex;
       flex-direction: column;
@@ -244,7 +249,7 @@ header {
   align-items: center;
   margin-top: 4rem;
   padding-bottom: 2rem; }
-  .main-index .section-ventajas .title-product h2 {
+  .main-index .section-ventajas div h2 {
     font-family: "Cabin Sketch", sans-serif;
     font-size: 1.5rem; }
   .main-index .section-ventajas .ventajas {
@@ -263,9 +268,10 @@ header {
       text-align: center;
       font-size: 1rem;
       font-style: italic;
+      font-family: "Open Sans", sans-serif;
       font-weight: bold;
       color: black;
-      text-shadow: 5px 10px 20px black; }
+      text-shadow: 0px 0px 10px black; }
 
 .main-index .section-galeria {
   display: flex;
@@ -380,6 +386,9 @@ footer {
     font-weight: 200;
     font-size: 1rem;
     text-align: justify; }
+    .section-contacto .intro p::first-letter {
+      font-size: 2rem;
+      font-weight: 600; }
   .section-contacto .form-contacto {
     width: 50%;
     padding: 2rem;
@@ -396,9 +405,10 @@ footer {
       width: 100%;
       padding-top: 0.8rem;
       margin: 1rem 0;
-      justify-content: center; }
+      border-radius: 7px; }
     .section-contacto .form-contacto textarea {
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      border-radius: 7px; }
   .section-contacto div {
     width: 50%;
     margin: 1.5rem; }
@@ -406,10 +416,15 @@ footer {
       width: 100%;
       padding: 0.5rem;
       border-radius: 10px;
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      background-color: #000000;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      box-shadow: 0px 0px 6px white;
+      font-weight: 600; }
       .section-contacto div input:hover {
-        color: white;
-        background-color: black; }
+        background-color: white;
+        color: #000000; }
 
 .container .titulo-bienvenida {
   display: flex;
@@ -454,6 +469,9 @@ footer {
   font-weight: 200;
   font-size: 1rem;
   text-align: justify; }
+  .container .bienvenida-info .empresa-descripcion::first-letter {
+    font-size: 2rem;
+    font-weight: 600; }
 
 .container .bienvenida-info .linea-separacion {
   margin-top: 2rem;
@@ -476,8 +494,12 @@ footer {
     order: 1; }
     .container .localizacion-container .info-localizacion p {
       text-align: justify; }
+      .container .localizacion-container .info-localizacion p::first-letter {
+        font-size: 2rem;
+        font-weight: 600; }
     .container .localizacion-container .info-localizacion h2 {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-family: "Cabin Sketch", sans-serif; }
   .container .localizacion-container div iframe {
     border-radius: 10px;
     width: 100%;
@@ -501,9 +523,13 @@ footer {
     justify-content: center;
     align-items: center; }
     .container .transporte-container .transporte-info h2 {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-family: "Cabin Sketch", sans-serif; }
     .container .transporte-container .transporte-info p {
       text-align: justify; }
+      .container .transporte-container .transporte-info p::first-letter {
+        font-size: 2rem;
+        font-weight: 600; }
   .container .transporte-container .transportes-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -539,13 +565,17 @@ footer {
     align-items: center; }
     .intro div h1 {
       font-size: 2rem;
-      text-align: center; }
+      text-align: center;
+      font-family: "Cabin Sketch", sans-serif; }
     .intro div p {
       font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: 200;
       font-size: 1rem;
       text-align: justify; }
+      .intro div p::first-letter {
+        font-size: 2rem;
+        font-weight: 600; }
   .intro .carbon-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -555,7 +585,12 @@ footer {
     .intro .carbon-img img {
       width: 100%;
       height: 100%;
+      border-radius: 10px;
       object-fit: cover; }
+      .intro .carbon-img img:hover {
+        transform: scale(1.2);
+        transition-property: scale();
+        transition-duration: 300ms; }
 
 .proceso .carbon-img {
   display: grid;
@@ -566,27 +601,48 @@ footer {
   .proceso .carbon-img img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     object-fit: cover; }
+    .proceso .carbon-img img:hover {
+      transform: scale(1.2);
+      transition-property: scale();
+      transition-duration: 300ms; }
 
-.proceso div h2 {
-  font-size: 1.5rem; }
+.proceso div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .proceso div h2 {
+    font-size: 1.5rem;
+    font-family: "Cabin Sketch", sans-serif; }
+  .proceso div p {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: justify; }
+    .proceso div p::first-letter {
+      font-size: 2rem;
+      font-weight: 600; }
 
-.proceso div p {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 1rem;
-  text-align: justify; }
-
-.transporte div h2 {
-  font-size: 1.5rem; }
-
-.transporte div p {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 1rem;
-  text-align: justify; }
+.transporte div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .transporte div h2 {
+    font-size: 1.5rem;
+    font-family: "Cabin Sketch", sans-serif; }
+  .transporte div p {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: justify; }
+    .transporte div p::first-letter {
+      font-size: 2rem;
+      font-weight: 600; }
 
 .transporte .carbon-img {
   display: grid;
@@ -597,7 +653,12 @@ footer {
   .transporte .carbon-img img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     object-fit: cover; }
+    .transporte .carbon-img img:hover {
+      transform: scale(1.2);
+      transition-property: scale();
+      transition-duration: 300ms; }
 
 .btn-carbon {
   display: flex;
@@ -607,10 +668,14 @@ footer {
   .btn-carbon .button a button {
     padding: 0.5rem;
     border-radius: 10px;
-    font-size: 0.8rem; }
+    background-color: #000000;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    box-shadow: 0px 0px 6px white; }
     .btn-carbon .button a button:hover {
-      color: white;
-      background-color: black; }
+      background-color: white;
+      color: #000000; }
 
 .intro {
   margin-top: 3rem;
@@ -642,7 +707,12 @@ footer {
     .intro .leña-img img {
       width: 100%;
       height: 100%;
+      border-radius: 10px;
       object-fit: cover; }
+      .intro .leña-img img:hover {
+        transform: scale(1.2);
+        transition-property: scale();
+        transition-duration: 300ms; }
 
 .tipos .leña-img {
   display: grid;
@@ -653,10 +723,16 @@ footer {
   .tipos .leña-img img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     object-fit: cover; }
+    .tipos .leña-img img:hover {
+      transform: scale(1.2);
+      transition-property: scale();
+      transition-duration: 300ms; }
 
 .tipos div h2 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-family: "Cabin Sketch", sans-serif; }
 
 .tipos div p {
   font-family: "Open Sans", sans-serif;
@@ -664,16 +740,24 @@ footer {
   font-weight: 200;
   font-size: 1rem;
   text-align: justify; }
+  .tipos div p::first-letter {
+    font-size: 2rem;
+    font-weight: 600; }
 
-.transporte div h2 {
-  font-size: 1.5rem; }
-
-.transporte div p {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 1rem;
-  text-align: justify; }
+.transporte div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .transporte div h2 {
+    font-size: 1.5rem;
+    font-family: "Cabin Sketch", sans-serif; }
+  .transporte div p {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: justify; }
 
 .transporte .leña-img {
   display: grid;
@@ -684,7 +768,12 @@ footer {
   .transporte .leña-img img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     object-fit: scale-down; }
+    .transporte .leña-img img:hover {
+      transform: scale(1.2);
+      transition-property: scale();
+      transition-duration: 300ms; }
 
 .btn-leña {
   display: flex;
@@ -694,10 +783,15 @@ footer {
   .btn-leña .button a button {
     padding: 0.5rem;
     border-radius: 10px;
-    font-size: 0.8rem; }
+    background-color: #000000;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: 0px 0px 6px white; }
     .btn-leña .button a button:hover {
-      color: white;
-      background-color: black; }
+      background-color: white;
+      color: #000000; }
 
 .ventaja-card {
   display: flex;
@@ -861,26 +955,28 @@ footer {
   .main-index .banner-main .info-banner {
     margin-bottom: 5rem; }
     .main-index .banner-main .info-banner div h1 {
-      font-size: 1.5rem;
+      font-size: 1rem;
       text-wrap: wrap; }
-    .main-index .banner-main .info-banner div button {
-      padding: 4px;
-      font-size: 0.4rem; }
+    .main-index .banner-main .info-banner div a {
+      font-size: 0.5rem; }
   .main-index .banner-main video {
     height: 50%; }
   .main-index .contenedor {
     margin-top: 5rem; }
     .main-index .contenedor h2 {
-      font-size: 1rem; }
+      font-size: 0.8rem;
+      margin-bottom: 1rem; }
     .main-index .contenedor .info-p {
-      gap: 1rem; }
+      gap: 0.5rem; }
       .main-index .contenedor .info-p p {
         font-size: 0.5rem;
-        margin-bottom: 6rem; }
+        margin-bottom: 2rem; }
       .main-index .contenedor .info-p div h2 {
         font-size: 0.5rem; }
-  .main-index .section-cards .title-product h2 {
-    font-size: 0.7rem; }
+  .main-index .section-cards .title-product {
+    margin-top: 0; }
+    .main-index .section-cards .title-product h2 {
+      font-size: 1rem; }
   .main-index .section-cards .cards .cards-product {
     width: 10rem;
     gap: 5px; }
@@ -898,8 +994,10 @@ footer {
       padding: 5px;
       border-radius: 10px;
       font-size: 0.5rem; }
-  .section-ventajas .title-product h2 {
-    font-size: 0.7rem; }
+  .section-ventajas .title-product {
+    margin-top: 0; }
+    .section-ventajas .title-product h2 {
+      font-size: 1rem; }
   .section-ventajas .ventajas .ventaja-card {
     gap: 10px;
     width: 6rem;

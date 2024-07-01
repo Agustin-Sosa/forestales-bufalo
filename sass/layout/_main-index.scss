@@ -14,6 +14,7 @@
             border-radius: 2rem;
             color: white;
             margin-left: 4rem;
+            gap: 15px;
             div{
                 a{
                     padding: 10px;
@@ -25,6 +26,7 @@
                     font-family: $font-texto;
                     font-size: 1rem;
                     text-decoration: none;
+                    box-shadow: 0px 0px 6px white;
                     &:hover{
                         background-color: white;
                         color: #000000;
@@ -54,7 +56,7 @@
     .contenedor{
         width: 100%;
         padding: 2rem;
-        margin-top: 30rem;
+        margin-top: 35rem;
         h2{
             text-align: center;
             margin-bottom: 4rem;
@@ -63,9 +65,9 @@
         .info-p{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            margin-top: 1rem;
             gap: 3rem;
             text-align: center;
             p{
@@ -73,6 +75,10 @@
                 font-style: normal;
                 font-size: 1rem;
                 text-align: justify;
+                &::first-letter{
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
             }
             div{
                 display: flex;
@@ -203,7 +209,7 @@
         align-items: center;
         margin-top: 4rem;
         padding-bottom: 2rem;
-        .title-product{
+        div{
             h2{
                 font-family: $font-principal;
                 font-size: 1.5rem;
@@ -227,9 +233,10 @@
                 text-align: center;
                 font-size: 1rem;
                 font-style: italic;
+                font-family: $font-texto;
                 font-weight: bold;
                 color: black;
-                text-shadow:  5px 10px 20px black;
+                text-shadow:  0px 0px 10px black;
             }
         }
     }
