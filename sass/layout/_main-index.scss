@@ -15,7 +15,7 @@
             color: white;
             margin-left: 4rem;
             div{
-                button{
+                a{
                     padding: 10px;
                     border-radius: 5px;
                     background-color: #000000;
@@ -23,13 +23,11 @@
                     font-size: 1rem;
                     font-weight: 500;
                     font-family: $font-texto;
-                    a{
-                        text-decoration: none;
-                        color: white;
-                    }
-                    img{
-                        margin-left: 4px;
-                        width: 20px;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    &:hover{
+                        background-color: white;
+                        color: #000000;
                     }
                 }
             }
@@ -221,6 +219,9 @@
             img{
                 width: auto;
                 height: 10rem;
+                &:hover{
+                    transform: translateY(2px);
+                }
             }
             h2{
                 text-align: center;
