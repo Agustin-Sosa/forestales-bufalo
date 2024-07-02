@@ -45,8 +45,7 @@ header {
         font-style: normal;
         margin-left: 2rem; }
       header .logo a img {
-        width: 130px;
-        height: 70px; }
+        margin-left: 20px; }
   header .navBar {
     display: flex;
     flex-direction: row;
@@ -825,10 +824,12 @@ footer {
     margin-top: 10rem; }
     .main-index .banner-main .info-banner div h1 {
       font-size: 2rem; }
-    .main-index .banner-main .info-banner div button {
+    .main-index .banner-main .info-banner div a {
       padding: 5px;
       border-radius: 5px;
       font-size: 0.5rem; }
+  .main-index .banner-main video {
+    height: 80%; }
   .main-index .contenedor {
     width: 100%;
     padding: 2rem;
@@ -960,7 +961,7 @@ footer {
     .main-index .banner-main .info-banner div a {
       font-size: 0.5rem; }
   .main-index .banner-main video {
-    height: 50%; }
+    height: 40%; }
   .main-index .contenedor {
     margin-top: 5rem; }
     .main-index .contenedor h2 {
