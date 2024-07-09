@@ -304,6 +304,7 @@
                 grid-row-start: 2;
                 grid-row-end: 4;
                 img{
+                    object-fit: cover;
                     &:hover{
                         transform: scale(1.1);
                         transition-property: scale();
