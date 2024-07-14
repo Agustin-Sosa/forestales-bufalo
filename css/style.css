@@ -452,7 +452,9 @@ footer {
   .container .bienvenida-info .img-leñera img {
     width: 100%;
     height: 100%;
-    border-radius: 10px; }
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px white;
+    margin-left: 1rem; }
     .container .bienvenida-info .img-leñera img:hover {
       transform: scale(1.07);
       transition-property: scale();
@@ -536,13 +538,14 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1, 1fr;
     margin-bottom: 1rem;
-    gap: 1rem; }
+    gap: 50px; }
     .container .transporte-container .transportes-img img {
       width: 100%;
       height: 100%;
-      border-radius: 10px; }
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px white; }
       .container .transporte-container .transportes-img img:hover {
-        transform: scale(1.3);
+        transform: scale(1.2);
         transition-property: scale();
         transition-duration: 400ms; }
     .container .transporte-container .transportes-img .img-1 {
@@ -582,32 +585,34 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1, 1fr;
     margin-bottom: 1rem;
-    gap: 1rem; }
+    gap: 40px; }
     .intro .carbon-img img {
       width: 100%;
-      height: 100%;
+      height: 70%;
       border-radius: 10px;
-      object-fit: cover; }
+      object-fit: cover;
+      box-shadow: 0px 0px 15px white; }
       .intro .carbon-img img:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition-property: scale();
-        transition-duration: 300ms; }
+        transition-duration: 400ms; }
 
 .proceso .carbon-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1, 1fr;
   margin-bottom: 1rem;
-  gap: 1rem; }
+  gap: 40px; }
   .proceso .carbon-img img {
     width: 100%;
-    height: 100%;
+    height: 70%;
     border-radius: 10px;
-    object-fit: cover; }
+    object-fit: cover;
+    box-shadow: 0px 0px 15px white; }
     .proceso .carbon-img img:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       transition-property: scale();
-      transition-duration: 300ms; }
+      transition-duration: 400ms; }
 
 .proceso div {
   display: flex;
@@ -650,16 +655,17 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1, 1fr;
   margin-bottom: 1rem;
-  gap: 1rem; }
+  gap: 40px; }
   .transporte .carbon-img img {
     width: 100%;
-    height: 100%;
+    height: 70%;
     border-radius: 10px;
-    object-fit: cover; }
+    object-fit: cover;
+    box-shadow: 0px 0px 15px white; }
     .transporte .carbon-img img:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       transition-property: scale();
-      transition-duration: 300ms; }
+      transition-duration: 400ms; }
 
 .btn-carbon {
   display: flex;
@@ -917,16 +923,16 @@ footer {
   .container .bienvenida-info .img-leñera {
     width: 50%; }
   .localizacion-container .info-localizacion {
-    order: 0; }
+    order: 1; }
     .localizacion-container .info-localizacion h2 {
       font-size: 0.9rem; }
     .localizacion-container .info-localizacion p {
       font-size: 0.7rem; }
-  .localizacion-container div iframe {
-    width: 100%;
-    order: 1; }
+  .localizacion-container div {
+    order: 2; }
+    .localizacion-container div iframe {
+      width: 100%; }
   .localizacion-container .linea-separacion {
-    order: 2;
     width: 100%;
     height: 0px;
     margin: 1rem; }
@@ -977,10 +983,10 @@ footer {
     .main-index .contenedor .info-p {
       gap: 0.5rem; }
       .main-index .contenedor .info-p p {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         margin-bottom: 2rem; }
       .main-index .contenedor .info-p div h2 {
-        font-size: 0.5rem; }
+        font-size: 0.6rem; }
   .main-index .section-cards .title-product {
     margin-top: 0; }
     .main-index .section-cards .title-product h2 {
@@ -996,26 +1002,24 @@ footer {
       font-size: 0.8rem; }
     .main-index .section-cards .cards .cards-product p {
       text-align: center;
-      font-size: 0.5rem;
+      font-size: 0.6rem;
       font-family: "Open Sans", sans-serif; }
     .main-index .section-cards .cards .cards-product .btn-card {
       padding: 5px;
       border-radius: 10px;
-      font-size: 0.5rem; }
-  .section-ventajas .title-product {
-    margin-top: 0; }
-    .section-ventajas .title-product h2 {
-      font-size: 1rem; }
-  .section-ventajas .ventajas .ventaja-card {
+      font-size: 0.6rem; }
+  .main-index .section-ventajas div h2 {
+    font-size: 1rem; }
+  .main-index .section-ventajas .ventajas .ventaja-card {
     gap: 10px;
     width: 6rem;
     height: 6rem;
     margin: 1rem;
     padding: 1rem; }
-    .section-ventajas .ventajas .ventaja-card img {
+    .main-index .section-ventajas .ventajas .ventaja-card img {
       width: 3rem;
       height: 3rem; }
-    .section-ventajas .ventajas .ventaja-card h2 {
+    .main-index .section-ventajas .ventajas .ventaja-card h2 {
       font-size: 0.5rem; }
   .main-index .section-galeria .galeria {
     width: 80%;

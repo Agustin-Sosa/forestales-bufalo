@@ -56,12 +56,12 @@
             .info-p{
                 gap: 0.5rem;
                 p{
-                    font-size: 0.5rem;
+                    font-size: 0.7rem;
                     margin-bottom: 2rem;
                 }
                 div{
                     h2{
-                        font-size: 0.5rem;
+                        font-size: 0.6rem;
                     }
                 }
             }
@@ -88,39 +88,40 @@
                     }
                     p{
                         text-align: center;
-                        font-size: 0.5rem;
+                        font-size: 0.6rem;
                         font-family: "Open Sans", sans-serif;
                     }
                     .btn-card{
                         padding: 5px;
                         border-radius: 10px;
-                        font-size: 0.5rem;
+                        font-size: 0.6rem;
                         }
                     }
                 }
             }
         }
-    
-        .section-ventajas{
-            .title-product{
-                margin-top: 0;
-                h2{
-                    font-size: 1rem;
-                }
-            }
-            .ventajas{
-                .ventaja-card{
-                    gap: 10px;
-                    width: 6rem;
-                    height: 6rem;
-                    margin: 1rem;
-                    padding: 1rem;
-                    img{
-                        width: 3rem;
-                        height: 3rem;
-                    }
+        
+        .main-index{
+            .section-ventajas{
+                div{
                     h2{
-                        font-size: 0.5rem;
+                        font-size: 1rem;
+                    }
+                }
+                .ventajas{
+                    .ventaja-card{
+                        gap: 10px;
+                        width: 6rem;
+                        height: 6rem;
+                        margin: 1rem;
+                        padding: 1rem;
+                        img{
+                            width: 3rem;
+                            height: 3rem;
+                        }
+                        h2{
+                            font-size: 0.5rem;
+                        }
                     }
                 }
             }
