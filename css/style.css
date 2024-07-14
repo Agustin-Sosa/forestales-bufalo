@@ -710,77 +710,98 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1, 1fr;
     margin-bottom: 1rem;
-    gap: 1rem; }
+    gap: 40px; }
     .intro .leña-img img {
+      width: 100%;
+      height: 70%;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0px 0px 15px white; }
+      .intro .leña-img img:hover {
+        transform: scale(1.1);
+        transition-property: scale();
+        transition-duration: 400ms; }
+  .intro .linea-separacion {
+    width: 80%; }
+
+.tipos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .tipos .leña-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 1fr;
+    margin-bottom: 1rem;
+    gap: 40px; }
+    .tipos .leña-img img {
       width: 100%;
       height: 100%;
       border-radius: 10px;
-      object-fit: cover; }
-      .intro .leña-img img:hover {
-        transform: scale(1.2);
+      object-fit: cover;
+      box-shadow: 0px 0px 15px white; }
+      .tipos .leña-img img:hover {
+        transform: scale(1.1);
         transition-property: scale();
-        transition-duration: 300ms; }
+        transition-duration: 400ms; }
+  .tipos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .tipos div h2 {
+      font-size: 1.5rem;
+      font-family: "Cabin Sketch", sans-serif; }
+    .tipos div p {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 1rem;
+      text-align: justify; }
+      .tipos div p::first-letter {
+        font-size: 2rem;
+        font-weight: 600; }
+  .tipos .linea-separacion {
+    width: 80%; }
 
-.tipos .leña-img {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1, 1fr;
-  margin-bottom: 1rem;
-  gap: 1rem; }
-  .tipos .leña-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover; }
-    .tipos .leña-img img:hover {
-      transform: scale(1.2);
-      transition-property: scale();
-      transition-duration: 300ms; }
-
-.tipos div h2 {
-  font-size: 1.5rem;
-  font-family: "Cabin Sketch", sans-serif; }
-
-.tipos div p {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 1rem;
-  text-align: justify; }
-  .tipos div p::first-letter {
-    font-size: 2rem;
-    font-weight: 600; }
-
-.transporte div {
+.transporte {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
-  .transporte div h2 {
-    font-size: 1.5rem;
-    font-family: "Cabin Sketch", sans-serif; }
-  .transporte div p {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 1rem;
-    text-align: justify; }
-
-.transporte .leña-img {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1, 1fr;
-  margin-bottom: 1rem;
-  gap: 1rem; }
-  .transporte .leña-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: scale-down; }
-    .transporte .leña-img img:hover {
-      transform: scale(1.2);
-      transition-property: scale();
-      transition-duration: 300ms; }
+  .transporte div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .transporte div h2 {
+      font-size: 1.5rem;
+      font-family: "Cabin Sketch", sans-serif; }
+    .transporte div p {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 1rem;
+      text-align: justify; }
+  .transporte .leña-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 1fr;
+    margin-bottom: 1rem;
+    gap: 40px; }
+    .transporte .leña-img img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: scale-down;
+      box-shadow: 0px 0px 15px white; }
+      .transporte .leña-img img:hover {
+        transform: scale(1.1);
+        transition-property: scale();
+        transition-duration: 400ms; }
+  .transporte .linea-separacion {
+    width: 80%; }
 
 .btn-leña {
   display: flex;
@@ -940,6 +961,12 @@ footer {
     font-size: 0.9rem; }
   .transporte-container .transporte-info p {
     font-size: 0.7rem; }
+  .tipos .leña-img {
+    order: 2; }
+  .tipos .div {
+    order: 1; }
+  .tipos .linea-separacion {
+    order: 3; }
   footer .redes h5 {
     padding-right: 5px; }
   footer .redes a img {
@@ -1041,7 +1068,27 @@ footer {
   .localizacion-container .linea-separacion {
     width: 80%;
     height: 0px;
-    margin: 1rem; } }
+    margin: 1rem; }
+  .container .transporte-container .transportes-img {
+    gap: 20px; }
+  .intro div h1 {
+    font-size: 1.5rem; }
+  .intro div p {
+    font-size: 0.7rem; }
+    .intro div p::first-letter {
+      font-size: 1.5rem; }
+  .tipos div h2 {
+    font-size: 1.5rem; }
+  .tipos div p {
+    font-size: 0.7rem; }
+    .tipos div p::first-letter {
+      font-size: 1.5rem; }
+  .transporte div h2 {
+    font-size: 1.5rem; }
+  .transporte div p {
+    font-size: 0.7rem; }
+    .transporte div p::first-letter {
+      font-size: 1.5rem; } }
 
 @media (max-width: 375px) {
   header .logo a h2 {
@@ -1076,4 +1123,6 @@ footer {
     font-size: 1rem;
     padding: 0.3rem; }
   .localizacion-container .info-localizacion h2 {
-    font-size: 0.5rem; } }
+    font-size: 0.5rem; }
+  .transporte div h2 {
+    font-size: 1.4rem; } }

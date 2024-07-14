@@ -169,5 +169,55 @@
                     margin: 1rem;
                 }
             }
+
+            .container{
+                .transporte-container{
+                    .transportes-img{
+                        gap: 20px;
+                    }
+                }
+            }
+
+            // ----page leña----
+
+            .intro{
+                div{
+                    h1{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 0.7rem;
+                        &::first-letter{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+            .tipos{
+                div{
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 0.7rem;
+                        &::first-letter{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            .transporte{
+                div{
+                    h2{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 0.7rem;
+                        &::first-letter{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
         }
-    
