@@ -116,7 +116,11 @@ header {
 .main-index .contenedor {
   width: 100%;
   padding: 2rem;
-  margin-top: 35rem; }
+  margin-top: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .main-index .contenedor h2 {
     text-align: center;
     margin-bottom: 4rem;
@@ -405,11 +409,14 @@ footer {
     .section-contacto .form-contacto input {
       width: 100%;
       padding-top: 0.8rem;
+      padding-bottom: 7px;
+      padding-left: 7px;
       margin: 1rem 0;
       border-radius: 7px; }
     .section-contacto .form-contacto textarea {
       margin: 1rem 0;
-      border-radius: 7px; }
+      border-radius: 7px;
+      padding: 7px; }
   .section-contacto div {
     width: 50%;
     margin: 1.5rem; }
@@ -961,12 +968,20 @@ footer {
     font-size: 0.9rem; }
   .transporte-container .transporte-info p {
     font-size: 0.7rem; }
+  .proceso .carbon-img {
+    order: 2; }
+  .proceso div {
+    order: 1; }
+  .proceso .linea-separacion {
+    order: 3; }
   .tipos .leña-img {
     order: 2; }
   .tipos .div {
     order: 1; }
   .tipos .linea-separacion {
     order: 3; }
+  .section-contacto .form-contacto {
+    width: 80%; }
   footer .redes h5 {
     padding-right: 5px; }
   footer .redes a img {
@@ -1088,7 +1103,27 @@ footer {
   .transporte div p {
     font-size: 0.7rem; }
     .transporte div p::first-letter {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  .proceso div p {
+    font-size: 0.7rem; }
+    .proceso div p::first-letter {
+      font-size: 1rem; }
+  .section-contacto .intro h1 {
+    font-size: 1.7rem; }
+  .section-contacto .intro p {
+    font-size: 0.7rem; }
+    .section-contacto .intro p::first-letter {
+      font-size: 1rem; }
+  .section-contacto .form-contacto {
+    width: 80%; }
+    .section-contacto .form-contacto label {
+      font-size: 1rem; }
+    .section-contacto .form-contacto input {
+      padding-bottom: 7px;
+      padding-left: 7px; }
+    .section-contacto .form-contacto textarea {
+      height: 50%;
+      padding: 7px; } }
 
 @media (max-width: 375px) {
   header .logo a h2 {

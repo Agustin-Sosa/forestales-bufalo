@@ -97,6 +97,20 @@
         }
     }
 
+    // ---page carbon---
+
+    .proceso{
+        .carbon-img{
+            order: 2;
+        }
+        div{
+            order: 1;
+        }
+        .linea-separacion{
+            order: 3;
+        }
+    }
+
     //---page leña---
 
     .tipos{
@@ -109,6 +123,12 @@
         .linea-separacion{
             order: 3;
         }
+    }
+
+    // ---page-contacto---
+
+    .section-contacto .form-contacto{
+        width: 80%;
     }
 
     // ----global-----
